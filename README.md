@@ -1,57 +1,80 @@
-# Messo Francis - Personal Portfolio
+# Personal Portfolio Website
 
-A modern, responsive personal portfolio website showcasing my work as a Python Software Engineer.
+A modern, responsive personal portfolio website built with Python Flask, featuring a clean design and interactive elements.
 
 ## Features
 
+- 🎨 Modern and responsive design
 - 🌓 Dark/Light theme toggle
-- 📱 Fully responsive design
-- 🎨 Modern and clean UI
-- ⚡ Fast loading and smooth animations
-- 📄 Interactive resume
+- 📱 Mobile-friendly navigation
+- ✨ Smooth scroll animations
+- 🎯 Interactive UI elements
+- 📄 Resume download functionality
 - 🔗 Social media integration
 
 ## Tech Stack
 
-- HTML5
-- CSS3 (with CSS Variables for theming)
-- JavaScript (Vanilla)
-- Font Awesome Icons
-- Google Fonts
+- **Backend**: Python 3.x, Flask
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Icons**: Font Awesome
+- **Fonts**: Inter (Google Fonts)
 
 ## Project Structure
 
 ```
 portfolio/
-├── index.html          # Main HTML file
-├── styles.css          # Main stylesheet
-├── resume.pdf          # Downloadable resume
-├── assets/            # Project assets
-│   ├── images/        # Image files
-│   └── fonts/         # Font files
-└── README.md          # Project documentation
+├── app.py              # Flask application
+├── requirements.txt    # Python dependencies
+├── static/            # Static files
+│   ├── css/          # Stylesheets
+│   ├── js/           # JavaScript files
+│   └── images/       # Images and icons
+├── templates/         # HTML templates
+└── README.md         # Project documentation
 ```
 
-## Getting Started
+## Installation
 
 1. Clone the repository:
-```bash
-git clone https://github.com/MessoJ/MyProfile.git
-```
+   ```bash
+   git clone https://github.com/MessoJ/MyProfile.git
+   cd MyProfile
+   ```
 
-2. Open `index.html` in your browser to view the website.
+2. Create a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run the application:
+   ```bash
+   python app.py
+   ```
+
+5. Open your browser and visit `http://localhost:5000`
 
 ## Development
 
-To modify the website:
-
-1. Edit `index.html` for content changes
-2. Modify `styles.css` for styling changes
-3. Update `resume.pdf` for resume changes
+- The main Flask application is in `app.py`
+- Templates are in the `templates` directory
+- Static files (CSS, JS, images) are in the `static` directory
+- Add new routes in `app.py`
+- Modify styles in `static/css/styles.css`
+- Update JavaScript functionality in `static/js/main.js`
 
 ## Contributing
 
-Feel free to submit issues and enhancement requests!
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## License
 
@@ -59,6 +82,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-- GitHub: [@MessoJ](https://github.com/MessoJ)
-- LinkedIn: [Messo Francis](https://linkedin.com/in/messofrancis)
-- Twitter: [@MessoFrancis](https://twitter.com/MessoFrancis) 
+Messo Francis - [@MessoFrancis](https://twitter.com/MessoFrancis)
+
+Project Link: [https://github.com/MessoJ/MyProfile](https://github.com/MessoJ/MyProfile) 

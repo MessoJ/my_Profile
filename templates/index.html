@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Messo Francis - Python Software Engineer specializing in environment setup, dependency management, and open-source collaboration">
+    <meta name="keywords" content="Python, Software Engineer, Developer, Open Source, CI/CD, Docker">
+    <meta name="author" content="Messo Francis">
+    <meta name="theme-color" content="#3498db">
+    
+    <title>Messo Francis - Python Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Messo Francis</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contributions">Open Source</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Messo Francis</h1>
+                <p class="subtitle">Python Software Engineer</p>
+                <p class="description">
+                    Detail-oriented Python developer with 3 years of experience specializing in environment setup, 
+                    dependency management, and open-source collaboration. Passionate about creating reproducible 
+                    development environments and maintaining high-quality code standards.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="https://github.com/MessoJ" class="btn btn-secondary" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i> GitHub Profile
+                    </a>
+                    <a href="{{ url_for('download_resume') }}" class="btn btn-secondary" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/MessoJ" target="_blank" rel="noopener" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/messofrancis" target="_blank" rel="noopener" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/MessoFrancis" target="_blank" rel="noopener" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="animate-on-scroll">About Me</h2>
+                    <p class="subtitle animate-on-scroll">My Background &amp; Passion</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text animate-on-scroll">
+                        <p>I'm a passionate Python developer with a strong focus on creating robust, scalable solutions. My expertise lies in environment setup, dependency management, and CI/CD pipeline optimization. I love contributing to open-source projects and helping teams build better software through improved development workflows.</p>
+                        <p>With experience in both remote and on-site environments, I've developed strong communication skills and the ability to collaborate effectively across distributed teams. I'm always eager to learn new technologies and share knowledge with the community.</p>
+                        <p>Beyond coding, I enjoy participating in tech meetups, mentoring junior developers, and exploring new tools that can enhance software development processes. I believe in writing clean, maintainable code and creating documented, reproducible environments that make onboarding and collaboration seamless.</p>
+                    </div>
+                    <div class="profile-image animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2574&q=80" alt="Messo Francis" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="animate-on-scroll">Technical Skills</h2>
+                    <p class="subtitle animate-on-scroll">My Technical Expertise</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category animate-on-scroll">
+                        <h3><i class="fas fa-code"></i> Programming &amp; Scripting</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python 3.x</span>
+                            <span class="skill-tag">Bash</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category animate-on-scroll">
+                        <h3><i class="fas fa-box"></i> Environment &amp; Packaging</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">pip</span>
+                            <span class="skill-tag">virtualenv</span>
+                            <span class="skill-tag">Poetry</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Docker Compose</span>
+                            <span class="skill-tag">Conda</span>
+                        </div>
+                    </div>
+                    <div class="skill-category animate-on-scroll">
+                        <h3><i class="fas fa-vial"></i> Testing &amp; CI/CD</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">pytest</span>
+                            <span class="skill-tag">unittest</span>
+                            <span class="skill-tag">coverage.py</span>
+                            <span class="skill-tag">GitHub Actions</span>
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">Travis CI</span>
+                            <span class="skill-tag">CircleCI</span>
+                        </div>
+                    </div>
+                    <div class="skill-category animate-on-scroll">
+                        <h3><i class="fas fa-server"></i> Platforms &amp; Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Windows</span>
+                            <span class="skill-tag">macOS</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">GitLab</span>
+                            <span class="skill-tag">Bitbucket</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-heading" style="margin-top: 4rem;">
+                    <h3 class="animate-on-scroll">Skills Development Timeline</h3>
+                </div>
+                <div class="skills-timeline">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-item-content">
+                            <h3>Python Fundamentals</h3>
+                            <div class="date">2022</div>
+                            <p>Started my journey with Python programming, learning core concepts and building simple applications. Focused on clean code practices and PEP 8 standards.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-item-content">
+                            <h3>Environment Management</h3>
+                            <div class="date">2023</div>
+                            <p>Mastered virtualenv, pip, and began exploring Poetry. Learned Docker basics and started creating containerized environments for Python applications.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-item-content">
+                            <h3>Testing &amp; Quality</h3>
+                            <div class="date">2023-2024</div>
+                            <p>Developed expertise in pytest, unittest, and code coverage tools. Implemented comprehensive testing strategies for Python codebases.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-item-content">
+                            <h3>CI/CD &amp; DevOps</h3>
+                            <div class="date">2024</div>
+                            <p>Advanced skills in GitHub Actions, Jenkins and CI/CD pipelines. Automated testing, linting, and deployment processes for Python projects.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-item-content">
+                            <h3>Open Source Contributions</h3>
+                            <div class="date">2024-Present</div>
+                            <p>Actively contributing to Python open source projects, focusing on dependency management tools, testing libraries, and developer experience improvements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="animate-on-scroll">Featured Projects</h2>
+                    <p class="subtitle animate-on-scroll">My Recent Work</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2670&q=80" alt="EnvMaster" />
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">EnvMaster</h3>
+                            <p class="project-description">A Python tool for managing complex development environments across multiple projects. Integrates with Poetry, pip, and Docker to create consistent development setups.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Docker</span>
+                                <span class="project-tag">Poetry</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/MessoJ/envmaster" class="project-link" target="_blank" rel="noopener">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1617042375876-a13e36732a04?ixlib=rb-4.0.3&auto=format&fit=crop&w=2670&q=80" alt="TestRunner CI" />
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">TestRunner CI</h3>
+                            <p class="project-description">A GitHub Action for optimized Python testing across multiple environments and Python versions. Automatically detects and configures the test runner based on project setup.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">GitHub Actions</span>
+                                <span class="project-tag">pytest</span>
+                                <span class="project-tag">YAML</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/MessoJ/testrunner-ci" class="project-link" target="_blank" rel="noopener">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-book"></i> Documentation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1611262588024-d12430b98920?ixlib=rb-4.0.3&auto=format&fit=crop&w=2670&q=80" alt="DependaBot" />
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">DependaBot Helper</h3>
+                            <p class="project-description">A utility package that assists with managing GitHub's Dependabot alerts. Provides custom configuration options and automatic PR merging for non-breaking updates.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">GitHub API</span>
+                                <span class="project-tag">Security</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/MessoJ/dependabot-helper" class="project-link">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-book"></i> Documentation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1563207153-f403bf289096?ixlib=rb-4.0.3&auto=format&fit=crop&w=2641&q=80" alt="Poetry Migration Tool" />
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Poetry Migration Tool</h3>
+                            <p class="project-description">A CLI tool that automatically converts projects from requirements.txt or setup.py to modern Poetry projects with pyproject.toml configuration.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Poetry</span>
+                                <span class="project-tag">CLI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/MessoJ/poetry-migration" class="project-link">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-book"></i> Documentation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="animate-on-scroll">Work Experience</h2>
+                    <p class="subtitle animate-on-scroll">My Professional Journey</p>
+                </div>
+                <div class="experience-timeline">
+                    <div class="experience-item animate-on-scroll">
+                        <div class="experience-header">
+                            <div>
+                                <div class="experience-title">Python Developer</div>
+                                <div class="experience-company">TechFlow, Inc.</div>
+                            </div>
+                            <div class="experience-date">Jan 2024 - Present</div>
+                        </div>
+                        <div class="experience-description">
+                            <ul>
+                                <li>Led the migration of legacy pip/requirements.txt setups to Poetry for modern dependency management, improving reproducibility and security.</li>
+                                <li>Maintained CI/CD pipelines using GitHub Actions and Jenkins, automating testing (pytest) and linting to ensure code quality before deployment.</li>
+                                <li>Diagnosed and resolved cross-platform dependency issues by updating and patching packages, coordinating with maintainers to upstream fixes.</li>
+                                <li>Contributed to internal and external open-source Python projects, submitting pull requests to fix bugs and add features in common libraries.</li>
+                                <li>Prepared technical documentation and environment configuration guides, enhancing remote team productivity and knowledge sharing.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="experience-item animate-on-scroll">
+                        <div class="experience-header">
+                            <div>
+                                <div class="experience-title">Junior Software Developer</div>
+                                <div class="experience-company">CodeCraft LLC</div>
+                            </div>
+                            <div class="experience-date">Jan 2023 - Dec 2023</div>
+                        </div>
+                        <div class="experience-description">
+                            <ul>
+                                <li>Developed Docker images and docker-compose files for multiple projects, enabling consistent development and testing environments for a distributed team.</li>
+                                <li>Migrated existing codebases from Python 2 to Python 3, updating dependencies and code to comply with modern Python standards.</li>
+                                <li>Wrote pytest test cases for new and legacy code, improving overall code coverage and reliability.</li>
+                                <li>Participated in daily stand-ups and design discussions as part of a geographically dispersed team, demonstrating strong communication and collaboration skills.</li>
+                                <li>Documented setup procedures and best practices, reducing onboarding time for new developers by 30%.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contributions" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="animate-on-scroll">Open Source Contributions</h2>
+                    <p class="subtitle animate-on-scroll">My Impact on the Community</p>
+                </div>
+                <div class="contributions">
+                    <div class="contribution-item animate-on-scroll">
+                        <div class="contribution-header">
+                            <div class="contribution-project">Python Poetry</div>
+                            <div class="contribution-type">Feature</div>
+                        </div>
+                        <p class="contribution-description">Implemented improved error handling for dependency resolution failures, providing more helpful error messages that guide users to resolving conflicts. PR includes comprehensive tests and documentation updates.</p>
+                        <a href="https://github.com/python-poetry/poetry/pull/7890" class="contribution-link">
+                            <i class="fab fa-github"></i> View Pull Request #7890
+                        </a>
+                    </div>
+                    <div class="contribution-item animate-on-scroll">
+                        <div class="contribution-header">
+                            <div class="contribution-project">pytest-cov</div>
+                            <div class="contribution-type">Bug Fix</div>
+                        </div>
+                        <p class="contribution-description">Fixed an issue with coverage reporting when running tests in parallel using pytest-xdist. The fix ensures accurate coverage metrics across distributed test runs.</p>
+                        <a href="https://github.com/pytest-dev/pytest-cov/pull/567" class="contribution-link">
+                            <i class="fab fa-github"></i> View Pull Request #567
+                        </a>
+                    </div>
+                    <div class="contribution-item animate-on-scroll">
+                        <div class="contribution-header">
+                            <div class="contribution-project">Docker-Compose</div>
+                            <div class="contribution-type">Documentation</div>
+                        </div>
+                        <p class="contribution-description">Improved documentation for Python development environments with Docker Compose, including best practices for volume mounts, dependency management, and testing within containers.</p>
+                        <a href="https://github.com/docker/compose/pull/9821" class="contribution-link">
+                            <i class="fab fa-github"></i> View Pull Request #9821
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="animate-on-scroll">Testimonials</h2>
+                    <p class="subtitle animate-on-scroll">What People Say About Me</p>
+                </div>
+                <div class="testimonials-slider">
+                    <div class="testimonial animate-on-scroll">
+                        <p class="testimonial-text">"Messo transformed our development workflow with his expertise in Python environments and dependency management. His implementation of Poetry and Docker drastically reduced onboarding time and eliminated the 'it works on my machine' problems we were facing."</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Alex Johnson" />
+                            </div>
+                            <div class="author-name">Alex Johnson</div>
+                            <div class="author-role">CTO at TechFlow</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="animate-on-scroll">Blog & Articles</h2>
+                    <p class="subtitle animate-on-scroll">Sharing Knowledge &amp; Insights</p>
+                </div>
+                <div class="blog-grid">
+                    <div class="blog-card animate-on-scroll">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2670&q=80" alt="Modern Python Dependency Management" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">May 30, 2025</div>
+                            <h3 class="blog-title">Modern Python Dependency Management with Poetry</h3>
+                            <p class="blog-excerpt">Learn how Poetry solves common dependency issues and simplifies package management compared to traditional requirements.txt files.</p>
+                            <a href="#" class="read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-card animate-on-scroll">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2670&q=80" alt="GitHub Actions for Python" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">April 15, 2025</div>
+                            <h3 class="blog-title">Optimizing CI/CD for Python Projects with GitHub Actions</h3>
+                            <p class="blog-excerpt">A comprehensive guide to setting up efficient CI/CD pipelines for Python projects using GitHub Actions.</p>
+                            <a href="#" class="read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-card animate-on-scroll">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=2670&q=80" alt="Docker for Python Development" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">March 22, 2025</div>
+                            <h3 class="blog-title">Creating Reproducible Python Dev Environments with Docker</h3>
+                            <p class="blog-excerpt">How to leverage Docker to create consistent development environments across teams and eliminate configuration drift.</p>
+                            <a href="#" class="read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="animate-on-scroll">Education & Certifications</h2>
+                    <p class="subtitle animate-on-scroll">Academic Background</p>
+                </div>
+                <div class="education-grid">
+                    <div class="education-item animate-on-scroll">
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <div class="institution">University of Texas at Dallas</div>
+                        <div class="details">Graduated Cum Laude (GPA: 3.7/4.0) - 2023</div>
+                    </div>
+                    <div class="education-item animate-on-scroll">
+                        <h3>Machine Learning with Python</h3>
+                        <div class="institution">MITx (EDX)</div>
+                        <div class="details">From Linear Models to Deep Learning - Passed with 85% (2024)</div>
+                    </div>
+                    <div class="education-item animate-on-scroll">
+                        <h3>AWS Machine Learning Fundamentals</h3>
+                        <div class="institution">Udacity</div>
+                        <div class="details">Certified (2025)</div>
+                    </div>
+                    <div class="education-item animate-on-scroll">
+                        <h3>AI Programming with Python</h3>
+                        <div class="institution">Udacity</div>
+                        <div class="details">Certified (2024)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="animate-on-scroll">Let's Connect</h2>
+                    <p class="subtitle animate-on-scroll">Get In Touch</p>
+                </div>
+                <div class="contact-content animate-on-scroll">
+                    <p>I'm always interested in discussing new opportunities, collaborating on open-source projects, or sharing knowledge about Python development and DevOps practices.</p>
+                    <div class="contact-info">
+                        <a href="mailto:messofrans@gmail.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>messofrans@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/MessoJ" target="_blank" rel="noopener" class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/messofrancis" target="_blank" rel="noopener" class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Dallas, TX</span>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-input form-textarea" required></textarea>
+                            </div>
+                            <button type="submit" class="form-button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Messo Francis</div>
+                <div class="footer-links">
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#skills" class="footer-link">Skills</a>
+                    <a href="#projects" class="footer-link">Projects</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/MessoJ" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/messofrancis" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/MessoFrancis" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2025 Messo Francis. Built with passion for clean code and open source.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+            themeToggle.innerHTML = newTheme === 'light' ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
+        });
+
+        // Mobile menu functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+
+        // Scroll animations
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementBottom = element.getBoundingClientRect().bottom;
+                const isVisible = (elementTop < window.innerHeight) && (elementBottom >= 0);
+                
+                if (isVisible) {
+                    element.classList.add('animated');
+                }
+            });
+        };
+
+        // Back to top button
+        const backToTop = document.createElement('div');
+        backToTop.className = 'back-to-top';
+        backToTop.innerHTML = '<i class="fas fa-arrow-up"></i>';
+        document.body.appendChild(backToTop);
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+            animateOnScroll();
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Initialize animations
+        animateOnScroll();
+    </script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

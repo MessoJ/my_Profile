@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messo Francis - Resume</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #1D1D1F;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 0;
+            color: #007AFF;
+        }
+
+        .title {
+            font-size: 18px;
+            color: #5856D6;
+            margin: 10px 0;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #007AFF;
+            border-bottom: 2px solid #007AFF;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .job-title {
+            font-weight: 600;
+            font-size: 16px;
+            color: #1D1D1F;
+        }
+
+        .company {
+            font-weight: 500;
+            color: #5856D6;
+        }
+
+        .date {
+            color: #666;
+            font-size: 14px;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-category {
+            margin-bottom: 15px;
+        }
+
+        .skill-category h4 {
+            margin: 0 0 10px 0;
+            color: #5856D6;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tech-tag {
+            background-color: #007AFF;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+
+        @media print {
+            body {
+                padding: 20px;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="name">MESSO FRANCIS</h1>
+        <div class="title">Software Engineer & Data Scientist</div>
+        <div class="contact-info">
+            <div class="contact-item">📧 messo.francis@example.com</div>
+            <div class="contact-item">📱 (555) 123-4567</div>
+            <div class="contact-item">📍 Dallas, TX</div>
+            <div class="contact-item">💼 linkedin.com/in/messofrancis</div>
+            <div class="contact-item">👨‍💻 github.com/messofrancis</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">PROFESSIONAL SUMMARY</h2>
+        <p>
+            Innovative Software Engineer with 5+ years of experience in full-stack development, 
+            data science, and machine learning. Proven track record of delivering high-impact 
+            solutions at leading tech companies. Expert in Python, JavaScript, and cloud 
+            technologies with a strong focus on scalable architecture and performance optimization.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">TECHNICAL SKILLS</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Programming Languages</h4>
+                <div class="tech-stack">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Swift</span>
+                    <span class="tech-tag">SQL</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>Web Technologies</h4>
+                <div class="tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">Flask</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>Cloud & DevOps</h4>
+                <div class="tech-stack">
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">Azure</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Kubernetes</span>
+                    <span class="tech-tag">CI/CD</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>Data Science</h4>
+                <div class="tech-stack">
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">PyTorch</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">Scikit-learn</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
+        
+        <div class="experience-item">
+            <div class="job-title">Senior Software Engineer</div>
+            <div class="company">Apple Inc.</div>
+            <div class="date">June 2022 - Present</div>
+            <ul>
+                <li>Led development of key features for iOS 16, improving user experience and performance</li>
+                <li>Architected and implemented a new real-time data synchronization system</li>
+                <li>Mentored junior developers and conducted code reviews</li>
+                <li>Reduced app launch time by 40% through optimization</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">Swift</span>
+                <span class="tech-tag">SwiftUI</span>
+                <span class="tech-tag">Core Data</span>
+                <span class="tech-tag">Combine</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-title">Software Engineer</div>
+            <div class="company">Microsoft</div>
+            <div class="date">January 2020 - May 2022</div>
+            <ul>
+                <li>Developed microservices for Azure's cloud infrastructure</li>
+                <li>Implemented automated testing reducing deployment issues by 60%</li>
+                <li>Collaborated with cross-functional teams on cloud security features</li>
+                <li>Optimized database queries improving response time by 35%</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Kubernetes</span>
+                <span class="tech-tag">Azure</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-title">Full Stack Developer</div>
+            <div class="company">Google</div>
+            <div class="date">July 2018 - December 2019</div>
+            <ul>
+                <li>Built responsive web applications using modern JavaScript frameworks</li>
+                <li>Implemented CI/CD pipelines reducing deployment time by 50%</li>
+                <li>Developed RESTful APIs serving over 1 million requests daily</li>
+                <li>Improved application performance by implementing caching strategies</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">GraphQL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">EDUCATION</h2>
+        <div class="experience-item">
+            <div class="job-title">Bachelor of Science in Computer Science</div>
+            <div class="company">University of Texas at Dallas</div>
+            <div class="date">2014 - 2018</div>
+            <ul>
+                <li>GPA: 3.8/4.0</li>
+                <li>Relevant Coursework: Data Structures, Algorithms, Machine Learning, Database Systems, Software Engineering</li>
+                <li>Senior Project: Developed an AI-powered recommendation system</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">CERTIFICATIONS</h2>
+        <ul>
+            <li>AWS Certified Solutions Architect - Professional</li>
+            <li>Google Cloud Professional Data Engineer</li>
+            <li>Microsoft Certified: Azure Solutions Architect Expert</li>
+            <li>TensorFlow Developer Certificate</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">PROJECTS</h2>
+        <div class="experience-item">
+            <div class="job-title">High-Performance Game Engine</div>
+            <ul>
+                <li>Developed a custom 3D game engine using C++ and OpenGL</li>
+                <li>Implemented efficient memory management and multithreading</li>
+                <li>Created a custom physics engine with collision detection</li>
+                <li>Optimized rendering pipeline achieving 60+ FPS on mid-range hardware</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">OpenGL</span>
+                <span class="tech-tag">Vulkan</span>
+                <span class="tech-tag">CMake</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-title">AI-Powered Analytics Platform</div>
+            <ul>
+                <li>Developed a machine learning platform processing 1TB+ of data daily</li>
+                <li>Implemented real-time analytics dashboard using React and D3.js</li>
+                <li>Reduced processing time by 70% through optimization</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-title">Smart Home Automation System</div>
+            <ul>
+                <li>Created an IoT-based home automation system using Python and Raspberry Pi</li>
+                <li>Integrated with major smart home platforms (Google Home, Amazon Alexa)</li>
+                <li>Implemented custom voice recognition for personalized commands</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">LANGUAGES</h2>
+        <ul>
+            <li>English (Native)</li>
+            <li>Spanish (Professional)</li>
+            <li>French (Intermediate)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">INTERESTS</h2>
+        <ul>
+            <li>Artificial Intelligence & Machine Learning</li>
+            <li>Open Source Development</li>
+            <li>Cloud Architecture</li>
+            <li>Technical Writing</li>
+            <li>Hiking & Photography</li>
+        </ul>
+    </div>
+</body>
+</html> 
