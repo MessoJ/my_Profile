@@ -1,0 +1,84 @@
+%PDF-1.4
+1 0 obj
+<</Type /Catalog /Pages 2 0 R>>
+endobj
+2 0 obj
+<</Type /Pages /Kids [3 0 R] /Count 1>>
+endobj
+3 0 obj
+<</Type /Page /Parent 2 0 R /Resources 4 0 R /MediaBox [0 0 612 792] /Contents 6 0 R>>
+endobj
+4 0 obj
+<</Font <</F1 5 0 R /F2 7 0 R /F3 8 0 R>>>>
+endobj
+5 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold>>
+endobj
+7 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica>>
+endobj
+8 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique>>
+endobj
+6 0 obj
+<</Length 1500>>
+stream
+BT
+/F1 28 Tf 100 750 Td (Messo Francis) Tj
+/F2 16 Tf 100 720 Td (Python Software Engineer) Tj
+/F2 12 Tf 100 690 Td (Email: messofrancis@example.com | GitHub: github.com/MessoJ) Tj
+/F2 12 Tf 100 670 Td (LinkedIn: linkedin.com/in/messofrancis | Twitter: @MessoFrancis) Tj
+
+/F1 18 Tf 100 630 Td (Professional Summary) Tj
+/F2 12 Tf 100 610 Td (Detail-oriented Python developer with 3 years of experience specializing in environment setup, dependency management, and open-source collaboration. Passionate about creating reproducible development environments and maintaining high-quality code standards. Strong focus on CI/CD pipeline optimization and developer experience improvements.) Tj
+
+/F1 18 Tf 100 570 Td (Technical Skills) Tj
+/F1 14 Tf 100 550 Td (Programming & Scripting) Tj
+/F2 12 Tf 100 530 Td (• Python 3.x (Advanced) • Bash (Intermediate) • JavaScript (Intermediate) • SQL (Intermediate)) Tj
+
+/F1 14 Tf 100 500 Td (Environment & Packaging) Tj
+/F2 12 Tf 100 480 Td (• pip • virtualenv • Poetry • Docker • Docker Compose • Conda • Environment Management) Tj
+
+/F1 14 Tf 100 450 Td (Testing & CI/CD) Tj
+/F2 12 Tf 100 430 Td (• pytest • unittest • coverage.py • GitHub Actions • Jenkins • Travis CI • CircleCI • Test Automation) Tj
+
+/F1 14 Tf 100 400 Td (Platforms & Tools) Tj
+/F2 12 Tf 100 380 Td (• Linux • Windows • macOS • Git • GitHub • GitLab • Bitbucket • VS Code • PyCharm) Tj
+
+/F1 18 Tf 100 340 Td (Featured Projects) Tj
+/F1 14 Tf 100 320 Td (EnvMaster - Python Environment Management Tool) Tj
+/F2 12 Tf 100 300 Td (• Developed a comprehensive tool for managing complex development environments across multiple projects) Tj
+/F2 12 Tf 100 280 Td (• Integrated with Poetry, pip, and Docker to create consistent development setups) Tj
+/F2 12 Tf 100 260 Td (• Implemented automated environment validation and dependency resolution) Tj
+/F2 12 Tf 100 240 Td (Technologies: Python, Docker, Poetry, pip, virtualenv) Tj
+
+/F1 14 Tf 100 200 Td (TestRunner CI - GitHub Action) Tj
+/F2 12 Tf 100 180 Td (• Created an optimized testing solution for Python projects across multiple environments) Tj
+/F2 12 Tf 100 160 Td (• Implemented automatic test runner detection and configuration) Tj
+/F2 12 Tf 100 140 Td (• Reduced CI pipeline execution time by 40% through parallel test execution) Tj
+/F2 12 Tf 100 120 Td (Technologies: GitHub Actions, pytest, YAML, Python) Tj
+
+/F1 14 Tf 100 80 Td (DependaBot Helper - GitHub Integration) Tj
+/F2 12 Tf 100 60 Td (• Built a utility package for managing GitHub's Dependabot alerts) Tj
+/F2 12 Tf 100 40 Td (• Implemented custom configuration options and automatic PR merging) Tj
+/F2 12 Tf 100 20 Td (• Reduced manual dependency update work by 60%) Tj
+/F2 12 Tf 100 0 Td (Technologies: Python, GitHub API, REST APIs) Tj
+ET
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f
+0000000009 00000 n
+0000000056 00000 n
+0000000111 00000 n
+0000000212 00000 n
+0000000250 00000 n
+0000000317 00000 n
+0000000384 00000 n
+0000000451 00000 n
+trailer
+<</Size 9 /Root 1 0 R>>
+startxref
+2000
+%%EOF 
